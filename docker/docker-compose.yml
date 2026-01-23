@@ -13,7 +13,7 @@ services:
     container_name: projetia_env
     
     volumes:
-      - ./Work:/home/docker/Work
+      - ../:/home/docker/Work
     
     environment:
       - TZ=Europe/Paris
