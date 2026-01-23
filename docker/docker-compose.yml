@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  projetia:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        UNAME: docker
+        UID: 1000
+        GID: 1000
+    image: projetia_tensorflow:latest
+    container_name: projetia_env
+    
+    volumes:
+      - ./Work:/home/docker/Work
+    
+    environment:
+      - TZ=Europe/Paris
+    
+    stdin_open: true
+    tty: true
+    
+    command: /bin/bash
