@@ -2,7 +2,7 @@
 # Sert de raccourci pour les commandes courantes
 
 # Variables
-DOCKER_COMPOSE = docker-compose
+DOCKER_COMPOSE = docker-compose -f docker/docker-compose.yml
 CONTAINER_NAME = projetia_env
 WORK_DIR = /home/docker/Work
 
